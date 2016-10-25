@@ -1,0 +1,52 @@
+#include<stdio.h>
+#include<conio.h>
+#include<graphics.h>
+#include<dos.h>
+#include<stdlib.h>
+void main()
+	{
+	int i,gd=DETECT,gm,x,y;
+	initgraph(&gd,&gm,"c:\\tc\\bgi");
+	setcolor(10);
+	line(155,40,170,60);
+	line(154,40,169,60);
+	line(245,40,230,60);
+	line(246,40,231,60);
+	ellipse(200,100,0,180,50,50);
+	line(150,100,250,100);
+	setfillstyle(1,10);
+	floodfill(200,90,10);
+	rectangle(150,105,250,205);
+	setfillstyle(1,10);
+	floodfill(200,150,10);
+	line(120,120,120,175);
+	line(146,120,146,175);
+	ellipse(133,175,180,360,13,13);
+	ellipse(133,123,0,180,13,13);
+	setfillstyle(1,10);
+	floodfill(125,125,10);
+	line(255,120,255,175);
+	line(281,120,281,175);
+	ellipse(268,175,180,360,13,13);
+	ellipse(268,123,0,180,13,13);
+	setfillstyle(1,10);
+	floodfill(260,125,10);
+	line(240,205,240,245);
+	line(214,205,214,245);
+	line(160,205,160,245);
+	line(186,205,186,245);
+	ellipse(173,245,180,360,13,13);
+	ellipse(227,245,180,360,13,13);
+	setfillstyle(1,10);
+	floodfill(235,225,10);
+	setfillstyle(1,10);
+	floodfill(165,250,10);
+	setcolor(16);
+	circle(175,78,4);
+	setfillstyle(1,16);
+	floodfill(175,78,16);
+	circle(225,78,4);
+	setfillstyle(1,16);
+	floodfill(225,78,16);
+	getch();
+	}
